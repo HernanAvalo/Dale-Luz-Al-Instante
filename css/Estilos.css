@@ -25,14 +25,14 @@
         justify-content: space-between;
     }
     .header__logo{
-        margin: 0px;
+        margin: 0px 99px;
         padding: 0px;
-        border: 0px;
+        background-color: black;     
     }
     .header__logo-img{
         margin: 5px;
         padding: 5px;
-        border: 5p
+        background-color: black;        
     }
     .header__menu{
         padding: 5px;
@@ -59,6 +59,15 @@
         color: red;
         font-weight: bold;
         background-color: black;
+    }
+    .styleNav{
+        background-color: black;
+        color: red !important;
+        font-size: 20px;
+    }
+
+    .styleNavPos{
+        margin: 0px 99px;
     }
     
     
@@ -296,6 +305,15 @@
         list-style-type: none;
         background-color: black;
     }
+    .styleNav{
+        background-color: black;
+        color: red !important;
+        font-size: 20px;
+    }
+
+    .styleNavPos{
+        margin: 0px 99px;
+    }
     
     
     
@@ -500,6 +518,15 @@ header{
     font-weight: bold;
     list-style-type: none;
     background-color: black;
+}
+.styleNav{
+    background-color: black;
+    color: red !important;
+    font-size: 20px;
+}
+
+.styleNavPos{
+    margin: 0px 99px;
 }
 
 
@@ -775,6 +802,7 @@ LUMINARIAS
     text-size-adjust: 30px;
     font-size: large;
     padding: 5px;
+    background-color: black;
 
 }
 .mainRaiders__articulo-texto{
@@ -783,6 +811,7 @@ LUMINARIAS
     text-align: center;
     text-size-adjust: 20px;
     font-size: medium;
+    background-color: black;
 }
 
 
@@ -796,12 +825,16 @@ LUMINARIAS
     justify-content: center;
     flex-direction: row-reverse;
     display: flex;
-align-items: center;
+    align-items: center;
     font-family: 'Manrope', sans-serif;
     color: rgb(255, 255, 255);
     text-align: center;
     text-size-adjust: 20px;
     font-size: medium;
+}
+.mainContacto__titulo{
+    background-color: black;
+    margin: 49px;
 }
 
 

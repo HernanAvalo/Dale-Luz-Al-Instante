@@ -748,9 +748,6 @@ LUMINARIAS
     font-size: medium;
     background-color: black;
 }
-.mainRaiders__contenedor1-img:hover{
-    
-}
 
 
 /* CONTACTO */
@@ -775,80 +772,3 @@ LUMINARIAS
     margin: 49px;
 }
 
-
-
-
-
-
-
-/*     display: flex;
-    justify-content: space-between;
-    align-items: initial;
-    flex-direction: column; */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* #header .menuPrincipal .menu .linea {
-    text-decoration: none;
-    display: inline;
-    margin-left: 100px;
-    font-size: 25px;
-    list-style-type: none;
-    font-family: 'Manrope', sans-serif;
-    text-decoration: solid;
-} */
-
-
-
-
-/* #footer {
-    display:flex;
-}
-#footer .copyr {
-    content: 18px 420px;
-    font-family: 'Manrope', sans-serif;
-    margin: 10px auto;
-    justify-content: start;
-}
-#footer .listaFooter {
-    display: flex;
-    align-items: flex-end;
-    background-color: blueviolet;
-    justify-content: end
-}
-#footer .listaFooter li{
-    margin: 2px;
-    padding: 2px;
-    display: inline;
-} */
-
-
-
-
-
-
-
-
-
-
-/* #footer .listaFooter .icono {
-    display: inline;
-    justify-content: flex-end;
-    margin: 20px;
-    padding: 25px;
-} */

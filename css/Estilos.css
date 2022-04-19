@@ -2,102 +2,60 @@
     margin: 0;
 	padding: 0;
 	border: 0;
-    background-color: rgb(255, 255, 255);
+/*     background-color: rgb(255, 255, 255); */
 }
 
 
 /***************RESPONSIVE DESKTOP****************/
 
-@media screen and (min-width: 993px) {                           
-    .bodyHome{
-        height: 100vh;
-        width: 100%;
-        margin: 0%;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows:  100px 1fr 50px;
-    }
+@media screen and (min-width: 993px) { 
     
-    
-    header{ 
+    header{
         background-color: rgb(0, 0, 0);
-        display: flex;
-        justify-content: space-between;
     }
-    .header__logo{
-        margin: 0px 99px;
-        padding: 0px;
-        background-color: black;     
+    .navbar-dark .navbar-nav .nav-link {
+        color: rgb(253, 1, 0);
     }
-    .header__logo-img{
-        margin: 5px;
-        padding: 5px;
-        background-color: black;        
+    .navbar-dark .navbar-nav .nav-link:hover{
+        color: rgb(255, 255, 255)
     }
-    .header__menu{
-        padding: 5px;
-        margin: 5px;
-        display: flex;
-        background-color: black;
-    }
-    .header__lista{
-        padding: 0px 30px;
-        background-color: black;
-        display: flex;
-        align-items: flex-end;
-    }
-    .header__item{
-        padding: 0px 40px;
-        font-family: 'Manrope', sans-serif;
-        border: 3px solid red;
-        border-radius: 30px;
-        background-color: black;
-    }
-    .header__link{
-        text-decoration: none;
-        font-size: 20px;
-        color: red;
-        font-weight: bold;
-        background-color: black;
-    }
-    .styleNav{
-        background-color: black;
-        color: red !important;
-        font-size: 20px;
+    .navbar-collapse{
+        justify-content: end;
     }
 
-    .styleNavPos{
-        margin: 0px 99px;
-    }
-    
-    
-    
+
+
     /* /* /* /* FOOTER */
     
     .footer{
         background-color: rgb(0, 0, 0);
         display: flex;
         justify-content: space-between;
-        position: relative;
-        z-index: 2;
     }
     .footer__copy{
         font-family: 'Manrope', sans-serif;
         font-size: 15px;
         color: rgb(255, 255, 255);
         background-color: black;
-        padding: 5px;
     }
     .footer__lista{
         list-style-type: none;
         display: flex;
-        border-radius: 30px;
+        justify-items: center;
+        margin-bottom:0px;
+        align-items: center;
     }
     .footer__item{
-        padding: 20px;
+        padding: 5px 30px;
     }
-    .footer__copy-linea{
-        background-color: black;
+    .footer__item:hover{
+        transform: scale(1.5);
+    }
+    h3{
+        font-size: 15px;
+        line-height: 4.2;
+        margin: 0px 30px;
+        
     }
     
     
@@ -166,7 +124,10 @@
         overflow: hidden;
     
     }
-
+p {
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
 
 /* ANIMACIONES */
 
@@ -262,59 +223,22 @@
         grid-template-columns: 1fr;
         grid-template-rows:  100px 1fr 50px;
     }
-    
-    
-    header{ 
+
+    header{
         background-color: rgb(0, 0, 0);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
-
-    .header__logo-img{
-        margin: 5px;
-        padding: 5px;
-        border: 5p
+    .navbar-dark .navbar-nav .nav-link {
+        color: rgb(253, 1, 0);
     }
-    .header__menu{
-        padding: 5px;
-        margin: 5px;
-        display: flex;
+    .navbar-dark .navbar-nav .nav-link:hover{
+        color: rgb(255, 255, 255);
+    }
+    .navbar-collapse{
+        justify-content: end;
+    }
+    .navbar-expand-lg{
         background-color: black;
     }
-    .header__lista{
-        padding: 0px 30px;
-        background-color: black;
-        display: flex;
-        flex-wrap: wrap;
-        
-    }
-    .header__item{
-        padding: 0px 40px;
-        font-family: 'Manrope', sans-serif;
-        border: 3px solid red;
-        border-radius: 30px;
-        align-items: center;
-        background-color: black;
-    }
-    .header__link{
-        text-decoration: none;
-        font-size: 15px;
-        color: red;
-        font-weight: bold;
-        list-style-type: none;
-        background-color: black;
-    }
-    .styleNav{
-        background-color: black;
-        color: red !important;
-        font-size: 20px;
-    }
-
-    .styleNavPos{
-        margin: 0px 99px;
-    }
-    
     
     
     /* /* /* /* FOOTER */
@@ -475,8 +399,24 @@
     grid-template-rows:  100px 1fr 50px;
 }
 
+header{
+    background-color: rgb(0, 0, 0);
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(253, 1, 0);
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: rgb(255, 255, 255);
+}
+.navbar-collapse{
+    justify-content: end;
+}
+.navbar-expand-lg{
+    background-color: black;
+}
 
-header{ 
+
+/* header{ 
     background-color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
@@ -529,7 +469,7 @@ header{
     margin: 0px 99px;
 }
 
-
+ */
 
 /* /* /* /* FOOTER */
 
@@ -683,25 +623,6 @@ header{
 
 
 
-
-
-
-
-
-/* .mainHome {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-
-}
-
-.mainHome__grid-img{
-    width: 100%;
-
-} */
-
-
-
 /* 
 LUMINARIAS
  */
@@ -777,9 +698,7 @@ LUMINARIAS
 /* RIDERS */
 
 .mainRiders{
-    background-color: rgb(255, 255, 255);
     width: 100%;
-    height: 500px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -788,13 +707,29 @@ LUMINARIAS
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
+    background-color: black;
 
 }
 .mainRaiders__contenedor{
     display: flex;
-    justify-content: center;
-
+    justify-content: space-evenly;
+    background-color: black;
 }
+.mainRaiders__contenedor1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+.mainRaiders__contenedor2{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
 .mainRaiders__articulo-titulo{
     font-family: 'Manrope', sans-serif;
     color: rgb(255, 255, 255);
@@ -812,6 +747,9 @@ LUMINARIAS
     text-size-adjust: 20px;
     font-size: medium;
     background-color: black;
+}
+.mainRaiders__contenedor1-img:hover{
+    
 }
 
 

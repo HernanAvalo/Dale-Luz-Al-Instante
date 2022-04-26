@@ -26,40 +26,11 @@
 
 
     /* /* /* /* FOOTER */
+
+
+@import 'footer';
     
-    .footer{
-        background-color: rgb(0, 0, 0);
-        display: flex;
-        justify-content: space-between;
-    }
-    .footer__copy{
-        font-family: 'Manrope', sans-serif;
-        font-size: 15px;
-        color: rgb(255, 255, 255);
-        background-color: black;
-    }
-    .footer__lista{
-        list-style-type: none;
-        display: flex;
-        justify-items: center;
-        margin-bottom:0px;
-        align-items: center;
-    }
-    .footer__item{
-        padding: 5px 30px;
-    }
-    .footer__item:hover{
-        transform: scale(1.5);
-    }
-    h3{
-        font-size: 15px;
-        line-height: 4.2;
-        margin: 0px 30px;
-        
-    }
-    
-    
-    
+
     /* main */
     
     
@@ -412,7 +383,7 @@ header{
     justify-content: end;
 }
 .navbar-expand-lg{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 
 
@@ -423,23 +394,27 @@ header{
 }
 .footer__copy{
     font-family: 'Manrope', sans-serif;
-    font-size: 8px;
     color: rgb(255, 255, 255);
     background-color: black;
     padding: 5px;
     text-align: center;
 }
+.footer__copy-linea{
+    font-size: 1rem;
+}
 .footer__lista{
     list-style-type: none;
     display: flex;
-    border-radius: 30px;
-    justify-content: center;
+    justify-content: space-around;
+    padding-left: 0rem;
+    background-color: black;
 }
 .footer__item{
     padding: 5px;
+    background-color: black;
 }
 .footer__copy-linea{
-    padding: 10px;
+    padding: 0,5rem;
     background-color: black;
 }
 
@@ -714,4 +689,3 @@ LUMINARIAS
     background-color: black;
     margin: 49px;
 }
-

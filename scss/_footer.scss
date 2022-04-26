@@ -1,0 +1,27 @@
+@import 'vars';
+.footer {
+    background-color: $bgColor;
+    display: flex;
+    justify-content: space-between;
+    &__lista{
+        list-style-type: none;
+        display: flex;
+        justify-items: center;
+        margin-bottom:0px;
+        align-items: center;
+    }
+    &__item{
+        padding: 5px 30px;
+        &:hover{
+            transform: scale(1.5);
+        }
+    }
+    &__copy-linea{
+        font-size: 1rem;
+        line-height: 4.2;
+        margin: 10px 30px;
+        font-family: $font;
+        color: rgb(255, 255, 255);
+        background-color: $bgColor;
+    }
+}

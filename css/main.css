@@ -422,20 +422,20 @@
         grid-template-rows: 100px 1fr 50px;
   }
   header {
-    background-color: black;
+    background-color: red;
   }
-  .navbar-dark .navbar-nav .nav-link {
+  header .navbar-dark .navbar-nav .nav-link {
     color: #fd0100;
   }
-  .navbar-dark .navbar-nav .nav-link:hover {
+  header .navbar-dark .navbar-nav .nav-link:hover {
     color: white;
   }
-  .navbar-collapse {
+  header .navbar-collapse {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: end;
   }
-  .navbar-expand-lg {
+  header .navbar-expand-lg {
     background-color: black;
   }
   .footer {

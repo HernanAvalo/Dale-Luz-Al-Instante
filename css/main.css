@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   border: 0;
-  /*     background-color: rgb(255, 255, 255); */
 }
 
 /***************RESPONSIVE DESKTOP****************/
@@ -11,7 +10,7 @@
     background-color: black;
   }
   .navbar-dark .navbar-nav .nav-link {
-    color: #fd0100;
+    color: red;
   }
   .navbar-dark .navbar-nav .nav-link:hover {
     color: white;
@@ -20,6 +19,9 @@
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: end;
+  }
+  .nav-item h1 {
+    font-size: 1.3rem;
   }
   /* /* /* /* FOOTER */
   .footer {
@@ -131,62 +133,6 @@
     margin-top: 0%;
   }
   /* ANIMACIONES */
-  @-webkit-keyframes mi-animacion {
-    0% {
-      -webkit-transform: translate(52px, 126px);
-              transform: translate(52px, 126px);
-    }
-    100% {
-      -webkit-transform: translate(52px, 0px);
-              transform: translate(52px, 0px);
-    }
-    0% {
-      -webkit-transform: translate(52px, 126px);
-              transform: translate(52px, 126px);
-    }
-  }
-  @keyframes mi-animacion {
-    0% {
-      -webkit-transform: translate(52px, 126px);
-              transform: translate(52px, 126px);
-    }
-    100% {
-      -webkit-transform: translate(52px, 0px);
-              transform: translate(52px, 0px);
-    }
-    0% {
-      -webkit-transform: translate(52px, 126px);
-              transform: translate(52px, 126px);
-    }
-  }
-  .luzAnimada {
-    width: 60px;
-    height: 146.5px;
-    position: relative;
-    z-index: 1;
-    background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(red));
-    background: linear-gradient(transparent, red);
-    -webkit-transform: translate(50px, -4px);
-            transform: translate(50px, -4px);
-    -webkit-animation-name: mi-animacion;
-            animation-name: mi-animacion;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-            animation-timing-function: linear;
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
-  }
-  .backAnimacion {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    max-height: 200px;
-    background-color: black;
-    overflow: hidden;
-  }
   /******************* PROTOCOLO DMX **********************/
   .mainProtocolo {
     background-color: black;
@@ -706,20 +652,10 @@ LUMINARIAS
           justify-content: space-between;
 }
 
-.mainLuminarias__contenedor1-titulo {
+.mainLuminarias__contenedor1-titulo, .mainLuminarias__contenedor2-titulo {
   font-family: 'Manrope', sans-serif;
   color: white;
-  text-align: center;
-  -webkit-text-size-adjust: 20px;
-     -moz-text-size-adjust: 20px;
-      -ms-text-size-adjust: 20px;
-          text-size-adjust: 20px;
-}
-
-.mainLuminarias__contenedor2-titulo {
-  font-family: 'Manrope', sans-serif;
-  color: white;
-  text-align: center;
+  text-align: left;
   -webkit-text-size-adjust: 20px;
      -moz-text-size-adjust: 20px;
       -ms-text-size-adjust: 20px;

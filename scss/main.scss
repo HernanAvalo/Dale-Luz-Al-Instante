@@ -2,25 +2,29 @@
     margin: 0;
 	padding: 0;
 	border: 0;
-/*     background-color: rgb(255, 255, 255); */
 }
+@import 'vars';
 
 
 /***************RESPONSIVE DESKTOP****************/
-
 @media screen and (min-width: 993px) { 
-    
+
     header{
         background-color: rgb(0, 0, 0);
     }
     .navbar-dark .navbar-nav .nav-link {
-        color: rgb(253, 1, 0);
+        color: map-get($map: $colores, $key: rojo ) ;
     }
     .navbar-dark .navbar-nav .nav-link:hover{
-        color: rgb(255, 255, 255)
+        color: map-get($map: $colores, $key: blanco )
     }
     .navbar-collapse{
         justify-content: end;
+    }
+    .nav-item {
+        h1{
+            @include tamañoH1
+        }
     }
 
 
@@ -102,38 +106,7 @@ p {
 
 /* ANIMACIONES */
 
-@keyframes mi-animacion {
-    0%{
-        transform: translate(52px, 126px);
-    }
-    100%{
-        transform: translate(52px, 0px);
-    }
-    0%{
-        transform: translate(52px, 126px);
-    }
-    
-}
 
-    .luzAnimada{
-        width: 60px;
-        height: 146.5px;
-        position: relative;
-        z-index: 1;
-        background: linear-gradient(transparent, red);
-        transform: translate(50px, -4px);
-        animation-name: mi-animacion;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-        animation-duration: 2s;
-    }
-    .backAnimacion{
-        display: flex;
-        justify-content: space-around;
-        max-height: 200px;
-        background-color: black;
-        overflow: hidden;
-    }
 
     /******************* PROTOCOLO DMX **********************/
 
@@ -561,17 +534,11 @@ LUMINARIAS
     justify-content: space-between;
 }
 .mainLuminarias__contenedor1-titulo{
-    font-family: 'Manrope', sans-serif;
-    color: white;
-    text-align: center;
-    text-size-adjust: 20px;
+    @include contenedorLuminarias;
 }
 
 .mainLuminarias__contenedor2-titulo{
-    font-family: 'Manrope', sans-serif;
-    color: white;
-    text-align: center;
-    text-size-adjust: 20px;
+    @extend .mainLuminarias__contenedor1-titulo;
 }
 
 

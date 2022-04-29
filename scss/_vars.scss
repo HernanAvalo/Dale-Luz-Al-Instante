@@ -1,2 +1,16 @@
 $bgColor: rgb(0, 0, 0);
 $font: 'Manrope', sans-serif;
+$colores: (
+    rojo: rgb(255, 0, 0),
+    blanco: rgb(255, 255, 255)   
+);
+@mixin contenedorLuminarias {
+    font-family: 'Manrope', sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    text-size-adjust: 20px;
+    
+}
+@mixin tamañoH1 {
+    font-size: 1.3rem;
+}

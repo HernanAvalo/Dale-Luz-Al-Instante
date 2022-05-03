@@ -1,4 +1,39 @@
 @import 'vars';
+
+@media screen and (min-width: 993px) { 
+.footer {
+    border-top: 1rem;
+    background-color: $bgColor;
+    display: flex;
+    justify-content: space-between;
+    &__lista{
+        list-style-type: none;
+        display: flex;
+        margin-right: 20px;
+        margin-bottom:0px;
+        align-items: center;
+    }
+    &__item{
+        padding: 5px 30px;
+        &:hover{
+            transform: scale(1.5);
+        }
+    }
+    &__copy-linea{
+        font-size: 1rem;
+        line-height: 4.2;
+        margin: 10px 30px;
+        font-family: $font;
+        color: rgb(255, 255, 255);
+        background-color: $bgColor;
+    }
+    &__link img{
+        width: 20px;
+    }
+}
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
 .footer {
     background-color: $bgColor;
     display: flex;
@@ -24,4 +59,46 @@
         color: rgb(255, 255, 255);
         background-color: $bgColor;
     }
+    &__link img{
+        width: 30px;
+    }
+}
+}
+
+
+
+@media screen and (max-width: 576px){
+.footer{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column-reverse;
+    &__copy{
+        font-family: 'Manrope', sans-serif;
+        color: rgb(255, 255, 255);
+        background-color: black;
+        padding: 5px;
+        text-align: center;
+    }
+    &__copy-linea{
+        font-size: 1rem;
+    }
+    &__lista{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        padding-left: 0rem;
+        background-color: black;
+    }
+    &__item{
+        padding: 5px;
+        background-color: black;
+    }
+    &__copy-linea{
+        padding: 0,5rem;
+        background-color: black;
+    }
+    &__link img{
+        width: 30px;
+    }
+}
 }

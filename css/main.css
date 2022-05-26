@@ -227,13 +227,50 @@
   /* luminarias */
   .mainLuminarias {
     background-color: black;
+    color: white;
     width: 100%;
-    height: 500px;
+    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align-last: center;
+  }
+  .titulo_luminarias {
+    text-align: center;
+  }
+  .Cards_Estaticas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 2rem 0rem 2rem 0rem;
+  }
+  .Cards_Moviles {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 2rem 0rem 2rem 0rem;
+  }
+  .card-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .card-title {
     color: white;
@@ -273,6 +310,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    text-overflow: inherit;
   }
   .mainProtocolo__articulo-titulo {
     font-family: 'Manrope', sans-serif;
@@ -289,13 +327,14 @@
   .mainProtocolo__articulo-texto {
     font-family: 'Manrope', sans-serif;
     color: white;
-    text-align: center;
+    text-align: justify;
     -webkit-text-size-adjust: 20px;
        -moz-text-size-adjust: 20px;
         -ms-text-size-adjust: 20px;
             text-size-adjust: 20px;
     font-size: medium;
     background-color: black;
+    margin: 5vh;
   }
   .mainProtocolo_conteiner {
     display: -webkit-box;
@@ -309,7 +348,6 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  /* contacto */
   /* CONTACTO */
   .mainContacto {
     background-color: black;
@@ -429,11 +467,56 @@
     font-size: medium;
     background-color: black;
   }
+  .mainConsolas {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mainConsolas__conteiner1 {
+    padding: 8px;
+  }
+  .mainConsolas__conteiner1-titulo {
+    font-family: 'Manrope', sans-serif;
+    color: white;
+    text-align: center;
+    -webkit-text-size-adjust: 20px;
+       -moz-text-size-adjust: 20px;
+        -ms-text-size-adjust: 20px;
+            text-size-adjust: 20px;
+    font-size: 2rem;
+  }
+  .mainConsolas__conteiner2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 13vh;
+  }
+  .CarrouselFabricantes {
+    width: 90vh;
+    height: 35vh;
+  }
 }
 
 /***************RESPONSIVE TABLET****************/
 @media (min-width: 577px) and (max-width: 992px) {
   .bodyHome {
+    background-color: black;
     height: 100vh;
     width: 100%;
     margin: 0%;
@@ -530,6 +613,25 @@
     text-align: center;
     overflow: hidden;
   }
+  .mainLuminarias {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align-last: center;
+  }
+  .titulo_luminarias {
+    text-align: center;
+  }
   /******************* PROTOCOLO DMX **********************/
   .mainProtocolo {
     background-color: black;
@@ -598,9 +700,135 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .mainProtocolo_conteiner-iframe {
+  .mainRiders {
     width: 100%;
-    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mainRaiders__articulo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: black;
+  }
+  .mainRaiders__contenedor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    background-color: black;
+  }
+  .mainRaiders__contenedor1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    color: white;
+  }
+  .mainRaiders__contenedor2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    color: white;
+  }
+  .mainRaiders__articulo-titulo {
+    font-family: 'Manrope', sans-serif;
+    color: white;
+    text-align: center;
+    -webkit-text-size-adjust: 30px;
+       -moz-text-size-adjust: 30px;
+        -ms-text-size-adjust: 30px;
+            text-size-adjust: 30px;
+    font-size: large;
+    padding: 5px;
+    background-color: black;
+  }
+  .mainRaiders__articulo-texto {
+    font-family: 'Manrope', sans-serif;
+    color: white;
+    text-align: center;
+    -webkit-text-size-adjust: 20px;
+       -moz-text-size-adjust: 20px;
+        -ms-text-size-adjust: 20px;
+            text-size-adjust: 20px;
+    font-size: medium;
+    background-color: black;
+  }
+  .mainConsolas {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mainConsolas__conteiner1 {
+    padding: 8px;
+  }
+  .mainConsolas__conteiner1-titulo {
+    font-family: 'Manrope', sans-serif;
+    color: white;
+    text-align: center;
+    -webkit-text-size-adjust: 20px;
+       -moz-text-size-adjust: 20px;
+        -ms-text-size-adjust: 20px;
+            text-size-adjust: 20px;
+    font-size: 2rem;
+  }
+  .mainConsolas__conteiner2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 13vh;
+  }
+  .CarrouselFabricantes {
+    width: 90vh;
+    height: 35vh;
   }
 }
 
@@ -690,6 +918,25 @@
     width: 100%;
     text-align: center;
     overflow: hidden;
+  }
+  .mainLuminarias {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align-last: center;
+  }
+  .titulo_luminarias {
+    text-align: center;
   }
   /******************* PROTOCOLO DMX **********************/
   .mainProtocolo {
@@ -912,55 +1159,48 @@ LUMINARIAS
     font-size: medium;
     background-color: black;
   }
+  .mainConsolas {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mainConsolas__conteiner1 {
+    padding: 8px;
+  }
+  .mainConsolas__conteiner1-titulo {
+    font-family: 'Manrope', sans-serif;
+    color: white;
+    text-align: center;
+    -webkit-text-size-adjust: 20px;
+       -moz-text-size-adjust: 20px;
+        -ms-text-size-adjust: 20px;
+            text-size-adjust: 20px;
+    font-size: 2rem;
+  }
+  .mainConsolas__conteiner2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 13vh;
+  }
+  .CarrouselFabricantes {
+    width: 90vh;
+    height: 35vh;
+  }
 }
-
-/* CONSOLAS */
-.mainConsolas {
-  background-color: black;
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: initial;
-      -ms-flex-align: initial;
-          align-items: initial;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.mainConsolas__conteiner1 {
-  padding: 8px;
-}
-
-.mainConsolas__conteiner1-titulo {
-  font-family: 'Manrope', sans-serif;
-  color: white;
-  text-align: center;
-  -webkit-text-size-adjust: 20px;
-     -moz-text-size-adjust: 20px;
-      -ms-text-size-adjust: 20px;
-          text-size-adjust: 20px;
-  font-size: 2rem;
-}
-
-.mainConsolas__conteiner2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.mainConsolas__conteiner2-iframe {
-  width: 100%;
-  height: 460px;
-}
-
-/* RIDERS */

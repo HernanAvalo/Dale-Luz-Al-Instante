@@ -94,13 +94,33 @@
 
 /* luminarias */
 
-
 .mainLuminarias{
     background-color: black;
+    color: white;
     width: 100%;
-    height: 500px;
+    height: 100%;
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
+    text-align-last: center;
+}
+.titulo_luminarias {
+    text-align: center;
+}
+.Cards_Estaticas{
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0rem 2rem 0rem;
+}
+.Cards_Moviles{
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0rem 2rem 0rem;
+}
+.card-body {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 .card-title {
     color: white;
@@ -108,12 +128,7 @@
 .card-text {
     color: white;
 }
-
-
-
-    /******************* PROTOCOLO DMX **********************/
-
-
+/******************* PROTOCOLO DMX **********************/
     .mainProtocolo{
         background-color: black;
         width: 100%;
@@ -130,6 +145,7 @@
         flex-direction: column;
         background-color: black;
         align-items: center;
+        text-overflow: inherit;
     
     }
     .mainProtocolo__articulo-titulo{
@@ -145,10 +161,11 @@
     .mainProtocolo__articulo-texto{
         font-family: 'Manrope', sans-serif;
         color: rgb(255, 255, 255);
-        text-align: center;
+        text-align: justify;
         text-size-adjust: 20px;
         font-size: medium;
         background-color: black;
+        margin: 5vh;
     }
     
     .mainProtocolo_conteiner{
@@ -157,9 +174,9 @@
         background-color: black;
         align-items: center;
     }
-/* contacto */
 
-/* CONTACTO */
+
+    /* CONTACTO */
 
 .mainContacto{
     background-color: black;
@@ -233,12 +250,49 @@
     font-size: medium;
     background-color: black;
 }
+
+//consolas............d
+
+.mainConsolas{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: initial;
+    flex-direction: column;
+}
+
+.mainConsolas__conteiner1{
+    padding: 8px;
+}
+.mainConsolas__conteiner1-titulo{
+    font-family: 'Manrope', sans-serif;
+    color: white;
+    text-align: center;
+    text-size-adjust: 20px;
+    font-size: 2rem;
+}
+
+
+
+.mainConsolas__conteiner2{
+    display: flex;
+    justify-content: center;  
+    margin: 13vh;
+}
+
+.CarrouselFabricantes{
+    width: 90vh;
+    height: 35vh;
+}
 }
 
 /***************RESPONSIVE TABLET****************/
 
 @media (min-width: 577px) and (max-width: 992px) {
     .bodyHome{
+        background-color: rgb(0, 0, 0);
         height: 100vh;
         width: 100%;
         margin: 0%;
@@ -263,19 +317,10 @@
         background-color: black;
     }
     
-    
-    
-    
-    
     /* main */
-    
-    
-    
     .mainHome{
         background-color: rgb(0, 0, 0);
     }
-    
-    
     .mainHome__grid{
         margin: 0;
         border: 2px;
@@ -295,9 +340,7 @@
     .mainHome__grid-img{
         width: 100%;
         height: 100%;    
-    
     }
-    
     .mainHome__grid-img:nth-child(1){
         grid-column: 1/3;
     }
@@ -329,6 +372,20 @@
         width: 100%;
         text-align: center;
         overflow: hidden;
+    }
+    // LUMINARIAS
+    .mainLuminarias{
+        background-color: black;
+        color: white;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        text-align-last: center;
+    }
+    .titulo_luminarias {
+        text-align: center;
     }
         /******************* PROTOCOLO DMX **********************/
 
@@ -376,9 +433,90 @@
             background-color: black;
             align-items: center;
         }
-        .mainProtocolo_conteiner-iframe{
+
+    // RIDER TECNICO
+    .mainRiders{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .mainRaiders__articulo{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        background-color: black;
+    
+    }
+    .mainRaiders__contenedor{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: black;
+    }
+    .mainRaiders__contenedor1{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        color: white;
+    }
+    .mainRaiders__contenedor2{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        text-align: center;
+        color: white;
+    }
+    
+    .mainRaiders__articulo-titulo{
+        font-family: 'Manrope', sans-serif;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        text-size-adjust: 30px;
+        font-size: large;
+        padding: 5px;
+        background-color: black;
+    
+    }
+    .mainRaiders__articulo-texto{
+        font-family: 'Manrope', sans-serif;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        text-size-adjust: 20px;
+        font-size: medium;
+        background-color: black;
+    }
+
+        // CONSOLAS 
+
+        .mainConsolas{
+            background-color: black;
             width: 100%;
-            height: 100vh;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: initial;
+            flex-direction: column;
+        }
+        
+        .mainConsolas__conteiner1{
+            padding: 8px;
+        }
+        .mainConsolas__conteiner1-titulo{
+            font-family: 'Manrope', sans-serif;
+            color: white;
+            text-align: center;
+            text-size-adjust: 20px;
+            font-size: 2rem;
+        }        
+        .mainConsolas__conteiner2{
+            display: flex;
+            justify-content: center;  
+            margin: 13vh;
+        }
+        .CarrouselFabricantes{
+            width: 90vh;
+            height: 35vh;
         }
 }
 
@@ -457,6 +595,22 @@
         text-align: center;
         overflow: hidden;
     }
+// Luminarias
+.mainLuminarias{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align-last: center;
+}
+.titulo_luminarias {
+    text-align: center;
+}
+
+
     /******************* PROTOCOLO DMX **********************/
     .mainProtocolo{
             background-color: black;
@@ -601,14 +755,7 @@ LUMINARIAS
     font-size: medium;
     background-color: black;
 }
-
-}
-
-
-
-/* CONSOLAS */
-
-
+//CONSOLAS
 .mainConsolas{
     background-color: black;
     width: 100%;
@@ -618,7 +765,6 @@ LUMINARIAS
     align-items: initial;
     flex-direction: column;
 }
-
 .mainConsolas__conteiner1{
     padding: 8px;
 }
@@ -629,21 +775,13 @@ LUMINARIAS
     text-size-adjust: 20px;
     font-size: 2rem;
 }
-
-
 .mainConsolas__conteiner2{
     display: flex;
-    justify-content: center;
+    justify-content: center;  
+    margin: 13vh;
 }
-
-.mainConsolas__conteiner2-iframe{
-    width: 100%;
-    height: 460px;
+.CarrouselFabricantes{
+    width: 90vh;
+    height: 35vh;
 }
-
-
-/* RIDERS */
-
-
-
-
+}

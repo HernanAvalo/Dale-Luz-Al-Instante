@@ -1200,7 +1200,8 @@ LUMINARIAS
     margin: 13vh;
   }
   .CarrouselFabricantes {
-    width: 90vh;
-    height: 35vh;
+    width: 65vh;
+    height: 34vh;
+    margin: -5vh;
   }
 }
